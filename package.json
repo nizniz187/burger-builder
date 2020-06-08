@@ -1,0 +1,46 @@
+{
+  "name": "burger-builder",
+  "version": "1.0.0",
+  "description": "A hands-on side project of React for building a burger.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "clean-build": "run-s clean build",
+    "start": "webpack-dev-server --watch",
+    "clean-start": "run-s clean dev",
+    "clean": "rimraf public/assets",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nizniz187/burger-builder.git"
+  },
+  "keywords": [
+    "react",
+    "webpack"
+  ],
+  "author": "Niz Kuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nizniz187/burger-builder/issues"
+  },
+  "homepage": "https://github.com/nizniz187/burger-builder#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "mini-css-extract-plugin": "^0.9.0",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
